@@ -1,0 +1,5 @@
+config SHIELD_KAB_ONE_LEFT
+    def_bool $(shields_list_contains,kab_one_left)
+
+config SHIELD_KAB_ONE_RIGHT
+    def_bool $(shields_list_contains,kab_one_right)

@@ -1,0 +1,16 @@
+if SHIELD_KAB_ONE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "kab-one"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_KAB_ONE_LEFT
+
+if SHIELD_KAB_ONE_LEFT || SHIELD_KAB_ONE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_KAB_ONE_LEFT || SHIELD_KAB_ONE_RIGHT
