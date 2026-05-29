@@ -1,0 +1,27 @@
+// created following https://zmk.dev/docs/hardware-integration/dongle
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+
+    // TODO: finish filling this in
+    default_transform: keymap_transform_0 {
+        compatible = "zmk,matrix-transform";
+        columns = <12>;
+        rows = <4>;
+
+        map = <
+            // Lots of RC(r,c) macros
+        >;
+    };
+};

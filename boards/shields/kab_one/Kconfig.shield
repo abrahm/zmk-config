@@ -3,3 +3,6 @@ config SHIELD_KAB_ONE_LEFT
 
 config SHIELD_KAB_ONE_RIGHT
     def_bool $(shields_list_contains,kab_one_right)
+
+config SHIELD_KAB_ONE_DONGLE
+    def_bool $(shields_list_contains,kab_one_dongle)
